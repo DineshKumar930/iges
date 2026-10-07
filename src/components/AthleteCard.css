@@ -1,0 +1,48 @@
+.athlete-card {
+  background: linear-gradient(180deg, rgba(26, 34, 52, 0.9) 0%, rgba(17, 24, 39, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--igs-radius); overflow: hidden;
+  transition: var(--igs-transition); display: flex; flex-direction: column;
+}
+.athlete-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 212, 255, 0.4);
+  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+}
+.athlete-card__image-wrap { position: relative; height: 260px; overflow: hidden; }
+.athlete-card__image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.athlete-card:hover .athlete-card__image { transform: scale(1.08); }
+.athlete-card__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10, 14, 26, 0.9) 100%);
+  opacity: 0; transition: opacity 0.4s ease;
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: 20px;
+}
+.athlete-card:hover .athlete-card__overlay { opacity: 1; }
+.athlete-card__profile-btn {
+  padding: 10px 24px; border-radius: 50px;
+  background: var(--igs-gradient); color: #fff;
+  font-size: 0.82rem; font-weight: 600;
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+  transform: translateY(20px); transition: transform 0.4s ease;
+}
+.athlete-card:hover .athlete-card__profile-btn { transform: translateY(0); }
+.athlete-card__game-badge {
+  position: absolute; top: 16px; left: 16px;
+  padding: 6px 14px; border-radius: 50px;
+  background: rgba(10, 14, 26, 0.75); backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  font-size: 0.7rem; font-weight: 700; color: var(--igs-primary);
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.athlete-card__body { padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+.athlete-card__name { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+.athlete-card__position { color: var(--igs-primary); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+.athlete-card__achievement {
+  display: flex; align-items: center; gap: 8px;
+  padding-top: 12px; margin-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--igs-gray); font-size: 0.82rem; line-height: 1.5;
+}
+.athlete-card__trophy { font-size: 1rem; flex-shrink: 0; }
