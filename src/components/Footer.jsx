@@ -43,10 +43,11 @@ export default function Footer() {
 
 
             <p className="footer__description">
-              IGES brings education and sports together. We run tournaments, training programmes and
-              learning initiatives that help young people grow in the classroom and on the field.
-            </p>
-
+  IGES brings education and sports together. We run tournaments, training programmes and
+  learning initiatives that help young people grow in the classroom and on the field.
+  <br /><br />
+  <strong>Our Affiliated Unit:</strong> Chakrion Technologies
+</p>
             <div className="footer__social">
               {socialLinks.map((s) => (
                 <a key={s.name} href={s.href} className="footer__social-link" aria-label={s.name} target="_blank" rel="noopener noreferrer">
