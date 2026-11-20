@@ -1,0 +1,7 @@
+export const newsData = [
+  { id: 1, title: 'Adarsh Pratap Singh Qualifies as UP Sepak Takraw State Referee',   date: '2026-01-15', category: 'Announcement', description: 'Representing Amethi district, Adarsh Pratap Singh secured Grade A with 85% marks in the UP Sepak Takraw Referee Examination organized by the Uttar Pradesh.', image: 'images/ref.jpeg', author: 'IGES Media Team' },
+  { id: 2, title: 'Kumari Antim Selected for Manipur State Team in 33rd Sub-Junior Championship', date: '2026-01-10', category: 'Tournament',  description: 'Emerging athlete Kumari Antim, daughter of Satyawan, earned her selection in the Manipur State team for the 33rd National Sub-Junior Championship', image: 'images/antim.jpeg', author: 'IGES Media Team' },
+  { id: 3, title: 'Kabaddi and Racing Tournament Organized on National Sports Day',     date: '2026-01-05', category: 'Partnership',  description: 'To commemorate the birth anniversary of hockey legend Major Dhyan Chand, the Indian Group of Education & Sports',image:'images/kab.jpeg', author: 'IGES Media Team' },
+  ];
+
+export const newsCategories = ['All', 'Announcement', 'Tournament', 'Partnership', 'Regulation', 'Initiative', 'Achievement', 'Technology', 'Development', 'Awards'];

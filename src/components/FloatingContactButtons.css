@@ -1,0 +1,110 @@
+
+.igs-float {
+  position: fixed;
+  bottom: 25px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: igs-float-pulse 2.5s infinite;
+}
+
+.igs-float:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.3);
+}
+
+.igs-float-call {
+  left: 25px;
+  background: #1769ff;
+}
+
+.igs-float-whatsapp {
+  right: 25px;
+  background: #25d366;
+}
+
+.igs-float-call:hover {
+  background: #0d55d9;
+}
+
+.igs-float-whatsapp:hover {
+  background: #128c7e;
+}
+
+.igs-float-tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222222;
+  color: #ffffff;
+  padding: 9px 13px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.igs-float-call .igs-float-tooltip {
+  left: 70px;
+}
+
+.igs-float-whatsapp .igs-float-tooltip {
+  right: 70px;
+}
+
+.igs-float:hover .igs-float-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes igs-float-pulse {
+  0% {
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+  }
+  50% {
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.28);
+  }
+  100% {
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+  }
+}
+
+@media (max-width: 768px) {
+  .igs-float {
+    width: 51px;
+    height: 51px;
+    bottom: 18px;
+  }
+
+  .igs-float-call {
+    left: 16px;
+  }
+
+  .igs-float-whatsapp {
+    right: 16px;
+  }
+
+  .igs-float-tooltip {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .igs-float {
+    animation: none;
+    transition: none;
+  }
+}

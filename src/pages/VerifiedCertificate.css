@@ -1,0 +1,196 @@
+
+.iges-verified-certificate {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(20, 50, 90, 0.08);
+  color: #19345b;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.iges-verified-certificate * {
+  box-sizing: border-box;
+}
+
+.iges-vc-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  background: #effaf4;
+  border-bottom: 1px solid #c4ead3;
+}
+
+.iges-vc-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #159653;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.iges-vc-heading h2 {
+  margin: 0 0 7px;
+  color: #117342;
+  font-size: 22px;
+}
+
+.iges-vc-heading p {
+  margin: 0;
+  color: #426653;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.iges-vc-badge {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #159653;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.iges-vc-title {
+  padding: 22px 24px 12px;
+}
+
+.iges-vc-title h3 {
+  margin: 0 0 7px;
+  color: #173b73;
+  font-size: 19px;
+}
+
+.iges-vc-title p {
+  margin: 0;
+  color: #73839b;
+  font-size: 13px;
+}
+
+.iges-vc-table-wrapper {
+  width: 100%;
+  padding: 0 24px 24px;
+  overflow-x: auto;
+}
+
+.iges-vc-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.iges-vc-table th,
+.iges-vc-table td {
+  padding: 14px 15px;
+  border: 1px solid #e2e9f2;
+  font-size: 14px;
+  line-height: 1.5;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.iges-vc-table th {
+  width: 40%;
+  background: #f3f7fc;
+  color: #526984;
+  font-weight: 600;
+}
+
+.iges-vc-table td {
+  color: #19345b;
+  font-weight: 500;
+}
+
+.iges-vc-table tr:nth-child(even) td {
+  background: #fbfdff;
+}
+
+.iges-vc-footer {
+  padding: 20px 15px;
+  text-align: center;
+  background: #f3f7fc;
+  border-top: 1px solid #e2e9f2;
+}
+
+.iges-vc-footer span {
+  display: inline-block;
+  color: #174b91;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.iges-vc-footer p {
+  margin: 7px 0;
+  color: #344f73;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.iges-vc-footer small {
+  color: #78879b;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .iges-verified-certificate {
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .iges-vc-heading {
+    padding: 17px 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .iges-vc-check {
+    width: 38px;
+    height: 38px;
+    font-size: 23px;
+  }
+
+  .iges-vc-heading h2 {
+    font-size: 17px;
+  }
+
+  .iges-vc-heading p {
+    font-size: 12px;
+  }
+
+  .iges-vc-badge {
+    margin-left: 48px;
+    padding: 6px 10px;
+  }
+
+  .iges-vc-title {
+    padding: 18px 12px 12px;
+  }
+
+  .iges-vc-table-wrapper {
+    padding: 0 12px 18px;
+  }
+
+  .iges-vc-table th,
+  .iges-vc-table td {
+    padding: 11px 9px;
+    font-size: 12px;
+  }
+
+  .iges-vc-table th {
+    width: 42%;
+  }
+}

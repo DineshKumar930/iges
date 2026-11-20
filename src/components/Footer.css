@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@500;700&display=swap');
+
+.footer {
+  /* IGES brand colours, taken from the logo */
+  --iges-green: #0f6b3a;
+  --iges-green-light: #3fbf7f;
+  --iges-navy: #0b3d8c;
+  --iges-orange: #ff5a0a;
+  --iges-text: #b9c4d6;
+  --iges-text-dim: #7e8aa0;
+
+  position: relative;
+  background: linear-gradient(180deg, #08142a 0%, #050b18 100%);
+  padding: 84px 0 30px;
+  overflow: hidden;
+}
+
+/* Thin saffron / white / green line along the top edge */
+
+.footer__glow {
+  position: absolute; top: 0; left: 18%; width: 620px; height: 320px;
+  background: radial-gradient(ellipse at center, rgba(255, 90, 10, 0.09) 0%, transparent 70%);
+  pointer-events: none;
+}
+.footer__container { max-width: 1400px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
+.footer__grid {
+  display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.4fr; gap: 48px; margin-bottom: 60px;
+}
+
+/* ---------- Brand block ---------- */
+.footer__column--brand { max-width: 460px; }
+.footer__brand { display: flex; align-items: center; gap: 18px; margin-bottom: 22px; text-decoration: none; }
+
+/* The logo has a white background, so it sits in a white disc */
+.footer__logo-wrap {
+  flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%;
+  background: #fff; padding: 4px;
+  box-shadow: 0 0 0 3px rgba(63, 191, 127, 0.55), 0 10px 28px rgba(0, 0, 0, 0.45);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.footer__logo { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; display: block; }
+
+.footer__brand-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.footer__brand-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3rem; font-weight: 700; line-height: 1.25; color: #fff;
+}
+.footer__brand-hindi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 0.92rem; font-weight: 500; color: var(--iges-green-light);
+}
+
+/* The one loud element: the Hindi motto */
+.footer__tagline {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.7rem; font-weight: 700; line-height: 1.3;
+  color: var(--iges-orange);
+  margin: 0 0 16px; padding-left: 14px;
+  border-left: 3px solid var(--iges-orange);
+}
+.footer__description { color: var(--iges-text); font-size: 0.92rem; line-height: 1.75; margin: 0 0 24px; max-width: 52ch; }
+
+.footer__social { display: flex; gap: 12px; }
+.footer__social-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--iges-text); transition: all 0.25s ease;
+}
+.footer__social-link:hover {
+  color: #fff; background: var(--iges-orange); border-color: transparent;
+  transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255, 90, 10, 0.35);
+}
+
+/* ---------- Link columns ---------- */
+.footer__heading {
+  font-size: 1rem; font-weight: 700; color: #fff;
+  margin: 0 0 20px; position: relative; padding-bottom: 12px;
+}
+.footer__heading::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 32px; height: 3px;
+  background: var(--iges-green-light); border-radius: 2px;
+}
+.footer__links, .footer__contact { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.footer__links { gap: 10px; }
+.footer__link { color: var(--iges-text); font-size: 0.92rem; display: inline-block; text-decoration: none; transition: color 0.2s ease, transform 0.2s ease; }
+.footer__link:hover { color: var(--iges-orange); transform: translateX(5px); }
+
+.footer__contact { gap: 14px; }
+.footer__contact-item { display: flex; gap: 10px; color: var(--iges-text); font-size: 0.9rem; line-height: 1.6; }
+.footer__contact-icon { flex-shrink: 0; font-size: 1rem; }
+.footer__contact-link { color: var(--iges-text); text-decoration: none; transition: color 0.2s ease; }
+.footer__contact-link:hover { color: var(--iges-orange); }
+
+/* ---------- Bottom bar ---------- */
+.footer__bottom {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 28px; border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 20px; flex-wrap: wrap;
+}
+.footer__copyright { color: var(--iges-text-dim); font-size: 0.85rem; margin: 0; }
+.footer__legal { display: flex; align-items: center; gap: 12px; }
+.footer__legal-link { color: var(--iges-text); font-size: 0.85rem; text-decoration: none; transition: color 0.2s ease; }
+.footer__legal-link:hover { color: var(--iges-orange); }
+.footer__divider { color: var(--iges-text-dim); }
+
+/* Visible keyboard focus */
+.footer a:focus-visible { outline: 2px solid var(--iges-green-light); outline-offset: 3px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .footer * { transition: none !important; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer__column--brand { grid-column: 1 / -1; max-width: 100%; }
+}
+@media (max-width: 640px) {
+  .footer { padding: 60px 0 24px; }
+  .footer__container { padding: 0 20px; }
+  .footer__grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 40px; }
+  .footer__logo-wrap { width: 50px; height: 50px; }
+  .footer__brand-name { font-size: 1.1rem; }
+  .footer__tagline { font-size: 1.45rem; }
+  .footer__bottom { flex-direction: column; text-align: center; gap: 12px; }
+}
+
+
+.footer-credit {
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #101827;
+}
+
+.footer-credit p {
+    color: #b8c2d1;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-credit a {
+    color: #00bcd4;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

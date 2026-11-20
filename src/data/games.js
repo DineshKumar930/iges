@@ -1,0 +1,12 @@
+export const gamesData = [
+  { id: 1, name: 'Cricket',      category: 'Team Sport',      players: '11 vs 11',  description: 'A bat-and-ball game played between two teams of eleven players on a field with a wicket at each end.', image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&q=80', icon: '🏏' },
+  { id: 2, name: 'Football',     category: 'Team Sport',      players: '11 vs 11',  description: 'The world\'s most popular sport where two teams compete to score goals by getting the ball into the net.', image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80', icon: '⚽' },
+  { id: 3, name: 'Basketball',   category: 'Team Sport',      players: '5 vs 5',    description: 'A fast-paced game where teams score by shooting a ball through a hoop mounted on a backboard.', image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80', icon: '🏀' },
+  { id: 4, name: 'Volleyball',   category: 'Team Sport',      players: '6 vs 6',    description: 'A team sport where players hit a ball over a net, aiming to ground it on the opponent\'s court.', image: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&q=80', icon: '🏐' },
+  { id: 5, name: 'Badminton',    category: 'Racket Sport',    players: '1v1 / 2v2', description: 'A racket sport played using rackets to hit a shuttlecock across a net with precision and speed.', image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800&q=80', icon: '🏸' },
+  { id: 6, name: 'Table Tennis', category: 'Racket Sport',    players: '1v1 / 2v2', description: 'Two or four players hit a lightweight ball back and forth across a table using small rackets.', image: 'https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=800&q=80', icon: '🏓' },
+  { id: 7, name: 'Chess',        category: 'Mind Sport',      players: '1 vs 1',    description: 'A strategic board game of intellect where two players compete to checkmate the opponent\'s king.', image: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&q=80', icon: '♟️' },
+  { id: 8, name: 'Athletics',    category: 'Individual Sport', players: 'Individual', description: 'A collection of sporting events including running, jumping, throwing, and walking competitions.', image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80', icon: '🏃' }
+];
+
+export const gameCategories = ['All', 'Team Sport', 'Racket Sport', 'Mind Sport', 'Individual Sport'];

@@ -1,0 +1,76 @@
+.certificate-form-page {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.certificate-form-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.certificate-form-card h1 {
+  color: #10264b;
+  margin-top: 0;
+}
+
+.certificate-form-card p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.certificate-form-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.certificate-form-card input,
+.certificate-form-card select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  font-size: 15px;
+}
+
+.certificate-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.certificate-form-actions button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #1746a2;
+  color: white;
+  cursor: pointer;
+}
+
+.certificate-form-actions button[type="button"] {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+@media (max-width: 480px) {
+  .certificate-form-card {
+    padding: 20px;
+  }
+
+  .certificate-form-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,285 @@
+
+.verification-page {
+  min-height: 80vh;
+  padding: 45px 16px;
+margin-top: 100px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.verification-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.verification-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+
+.verification-header h1 {
+  margin: 16px 0 8px;
+  font-size: 30px;
+  color: white;
+}
+
+.verification-header p {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.verification-header span {
+  color: #6b7d96;
+  font-size: 14px;
+}
+
+.verification-card {
+  background: #fff;
+  border: 1px solid #e0e8f2;
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 5px 20px rgba(24, 57, 100, 0.06);
+}
+
+.verification-card label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.verification-form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.verification-form-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #ccd8e8;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.verification-form-row input:focus {
+  border-color: #2468cf;
+  box-shadow: 0 0 0 3px rgba(36, 104, 207, 0.1);
+}
+
+.verification-form-row button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #2165c5;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.verification-form-row button:hover {
+  background: #174b98;
+}
+
+.verification-error {
+  margin-top: 22px;
+  padding: 18px;
+  border: 1px solid #f1c5c5;
+  border-radius: 9px;
+  background: #fff1f1;
+  color: #b42318;
+}
+
+.verification-error p {
+  margin-bottom: 0;
+}
+
+.verified-certificate {
+  margin-top: 28px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dce6f2;
+  border-radius: 12px;
+  box-shadow: 0 5px 22px rgba(24, 57, 100, 0.07);
+}
+
+.verified-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px;
+  background: #effaf3;
+  border-bottom: 1px solid #c9ead5;
+}
+
+.verified-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #159653;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.verified-banner h2 {
+  margin: 0 0 7px;
+  color: #137744;
+  font-size: 21px;
+}
+
+.verified-banner p {
+  margin: 0;
+  color: #426653;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.verified-badge {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #159653;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.certificate-heading {
+  padding: 23px 24px 12px;
+}
+
+.certificate-heading h3 {
+  margin: 0 0 7px;
+  color: #173f7a;
+  font-size: 19px;
+}
+
+.certificate-heading p {
+  margin: 0;
+  color: #71829a;
+  font-size: 13px;
+}
+
+.certificate-table-wrapper {
+  padding: 0 24px 24px;
+  overflow-x: auto;
+}
+
+.certificate-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.certificate-table th,
+.certificate-table td {
+  padding: 13px 14px;
+  border: 1px solid #e2eaf3;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+.certificate-table th {
+  width: 40%;
+  background: #f3f7fc;
+  color: #586f8c;
+  font-weight: 600;
+}
+
+.certificate-table td {
+  color: #19365f;
+  font-weight: 500;
+}
+
+.certificate-table tr:nth-child(even) td {
+  background: #fbfdff;
+}
+
+.verification-footer {
+  padding: 20px;
+  text-align: center;
+  background: #f3f7fc;
+  border-top: 1px solid #e2eaf3;
+}
+
+.verification-footer strong {
+  color: #174b91;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.verification-footer p {
+  margin: 7px 0 0;
+  color: #637792;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .verification-page {
+    padding: 28px 12px;
+  }
+
+  .verification-header h1 {
+    font-size: 24px;
+  }
+
+  .verification-card {
+    padding: 18px 14px;
+  }
+
+  .verification-form-row {
+    flex-direction: column;
+  }
+
+  .verification-form-row button {
+    width: 100%;
+  }
+
+  .verified-banner {
+    flex-wrap: wrap;
+    padding: 17px 12px;
+    gap: 10px;
+  }
+
+  .verified-banner h2 {
+    font-size: 17px;
+  }
+
+  .verified-banner p {
+    font-size: 12px;
+  }
+
+  .verified-badge {
+    margin-left: 54px;
+  }
+
+  .certificate-heading {
+    padding: 18px 12px 12px;
+  }
+
+  .certificate-table-wrapper {
+    padding: 0 12px 18px;
+  }
+
+  .certificate-table th,
+  .certificate-table td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .certificate-table th {
+    width: 42%;
+  }
+}

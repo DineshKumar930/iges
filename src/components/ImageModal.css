@@ -1,0 +1,172 @@
+
+/* ================================
+   IMAGE MODAL OVERLAY
+================================ */
+
+.image-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  box-sizing: border-box;
+
+  z-index: 99999;
+  overflow: hidden;
+
+  animation: modalFade 0.3s ease;
+}
+
+/* ================================
+   IMAGE MODAL CONTAINER
+================================ */
+
+.image-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+
+  margin: auto;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: modalZoom 0.3s ease;
+}
+
+/* ================================
+   MODAL IMAGE
+================================ */
+
+.image-modal-img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 85vh;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   CLOSE BUTTON
+================================ */
+
+.image-modal-close {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #111111;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+  z-index: 10;
+
+  transition: all 0.2s ease;
+}
+
+.image-modal-close:hover {
+  background: #e63946;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalZoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+  .image-modal-overlay {
+    padding: 12px;
+  }
+
+  .image-modal {
+    width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+  }
+
+  .image-modal-img {
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+
+  .image-modal-close {
+    width: 34px;
+    height: 34px;
+    top: 6px;
+    right: 6px;
+    font-size: 25px;
+  }
+}
+
+/* ================================
+   HORIZONTAL SCROLL PREVENTION
+================================ */
+
+html,
+body,
+#root {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
